@@ -38,7 +38,7 @@
       		Finally the user uses the userportal to upload the emails/documents/attachaments through this page and
            gets back the classification details, and coonfidence score. They will also get back the entire set of configured             extractable parameters in a nice user friendly UI.
 
- ## The entire solutioning has been doen keeping in mind the following aspects:
+## The entire solutioning has been doen keeping in mind the following aspects:
       
   ## Microservice Architecture:
       	Three microservices are hosted in huggingface Space. which is a free to use hosting platform.
@@ -51,4 +51,23 @@
          classification and financial knowledge.
       	Use Multiclassification to have multiple prediction dedicated to the request and sub requesttype
       	ChromaDB vector database to store high dimension data embeddings to have semantic search capabilities to check for            duplicate documents. However we still return the extractable parameters along with the classification.
+ ## Configuration:
+          https://github.com/ewfx/gaied-ai-ninjas/blob/main/artifacts/demo/loan-categories.json
+          **schema**:
+               {
+                 "categories": [
+                   {
+                     "name": "string",
+                     "subcategories": [
+                       {
+                         "name": "string",
+                         "description": "string",
+                         "extractableParameters": ["string", "string", ...]  // (Optional)
+                       }
+                     ]
+                   }
+                 ]
+               }
+            Master regex data set si already loaded in project and will be able to map any extractable parameter.
+
 
