@@ -50,7 +50,8 @@
       	Expose the LLMs bert-base-uncased model for general language specific support and prosusai/finbert for             
          classification and financial knowledge.
       	Use Multiclassification to have multiple prediction dedicated to the request and sub requesttype
-      	ChromaDB vector database to store high dimension data embeddings to have semantic search capabilities to check for            duplicate documents. However we still return the extractable parameters along with the classification.
+      	ChromaDB vector database to store high dimension data embeddings to have semantic search capabilities to check for            
+         duplicate documents. However we still return the extractable parameters along with the classification.
  ## Configuration:
           https://github.com/ewfx/gaied-ai-ninjas/blob/main/artifacts/demo/loan-categories.json
           **Request classification schema**:
@@ -71,10 +72,11 @@
             Master regex data set si already loaded in project and will be able to map any extractable parameter.
          **Other configurations**: Can be configured in chormaSpace project and fastApispace project
             {
-             "data_priority": "email_body", //when classification training and predicting consider numerical data from                                                    //attachment or email body 
+             "data_priority": "email_body", //when classification training and predicting consider numerical data from                                                                                                    //attachment or email body 
              "document_duplicity_threshhold: "30" //consider how many days for duplicate documents
             }
 ## Example API output:
+**Sample output**
    {
        "Primary Request Type": "Money Inbound",
        "Primary Request Confidence": "0.92",
