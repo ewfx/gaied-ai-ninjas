@@ -30,13 +30,13 @@
   ---------------------
       		The trainer gets a chance to fine tune and train the model with new emails and correct requesst and subRequest Type.
            This step is not necessary ut added as an advantage so that for more data, the model can be even more fine tuned.
-      	The User
+ ## The User
   -------------------
       		Finally the user uses the userportal to upload the emails/documents/attachaments through this page and
            gets back the classification details, and coonfidence score. They will also get back the entire set of configured extractable
            parameters in a nice user friendly UI.
 
-  The entire solutioning has been doen keeping in mind the following aspects:
+ ## The entire solutioning has been doen keeping in mind the following aspects:
       
   ## Microservice Architecture:
       	Three microservices are hosted in huggingface Space. which is a free to use hosting platform.
