@@ -74,4 +74,21 @@
              "data_priority": "email_body", //when classification training and predicting consider numerical data from                                                    //attachment or email body 
              "document_duplicity_threshhold: "30" //consider how many days for duplicate documents
             }
-
+## Example API output:
+   {
+    "Primary Request Type": "Money Inbound",
+    "Primary Request Confidence": "0.92",
+    "Sub Request Type": "Repayment Term Adjustment",
+    "Sub Request Confidence": "0.86",
+    "extracted_parameters": {
+        "Effective Date": "Not Found",
+        "Adjustment Amount": "Not Found",
+        "Payment Date": "March 24, 2025",
+        "Interest Rate": "Not Found",
+        "Due Date": "March 24, 2025",
+        "Loan Amount": "$300,000",
+        "Loan ID": "LN-35450",
+        "Transaction Reference": "Not Found"
+    },
+    "is_duplicate": false
+}
